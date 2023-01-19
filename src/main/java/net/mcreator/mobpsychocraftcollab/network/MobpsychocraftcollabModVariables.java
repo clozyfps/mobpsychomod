@@ -81,9 +81,10 @@ public class MobpsychocraftcollabModVariables {
 					.orElse(new PlayerVariables()));
 			clone.CurrentPsychicEnergy = original.CurrentPsychicEnergy;
 			clone.MaxPsychicEnergy = original.MaxPsychicEnergy;
-			clone.Move1 = original.Move1;
 			clone.Move2 = original.Move2;
+			clone.Move1 = original.Move1;
 			clone.Move4 = original.Move4;
+			clone.physical_power = original.physical_power;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -255,9 +256,10 @@ public class MobpsychocraftcollabModVariables {
 	public static class PlayerVariables {
 		public double CurrentPsychicEnergy = 0;
 		public double MaxPsychicEnergy = 50.0;
-		public String Move1 = "\"\"";
 		public String Move2 = "\"\"";
+		public String Move1 = "\"\"";
 		public String Move4 = "\"\"";
+		public double physical_power = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -268,9 +270,10 @@ public class MobpsychocraftcollabModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("CurrentPsychicEnergy", CurrentPsychicEnergy);
 			nbt.putDouble("MaxPsychicEnergy", MaxPsychicEnergy);
-			nbt.putString("Move1", Move1);
 			nbt.putString("Move2", Move2);
+			nbt.putString("Move1", Move1);
 			nbt.putString("Move4", Move4);
+			nbt.putDouble("physical_power", physical_power);
 			return nbt;
 		}
 
@@ -278,9 +281,10 @@ public class MobpsychocraftcollabModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			CurrentPsychicEnergy = nbt.getDouble("CurrentPsychicEnergy");
 			MaxPsychicEnergy = nbt.getDouble("MaxPsychicEnergy");
-			Move1 = nbt.getString("Move1");
 			Move2 = nbt.getString("Move2");
+			Move1 = nbt.getString("Move1");
 			Move4 = nbt.getString("Move4");
+			physical_power = nbt.getDouble("physical_power");
 		}
 	}
 
@@ -308,9 +312,10 @@ public class MobpsychocraftcollabModVariables {
 							.orElse(new PlayerVariables()));
 					variables.CurrentPsychicEnergy = message.data.CurrentPsychicEnergy;
 					variables.MaxPsychicEnergy = message.data.MaxPsychicEnergy;
-					variables.Move1 = message.data.Move1;
 					variables.Move2 = message.data.Move2;
+					variables.Move1 = message.data.Move1;
 					variables.Move4 = message.data.Move4;
+					variables.physical_power = message.data.physical_power;
 				}
 			});
 			context.setPacketHandled(true);

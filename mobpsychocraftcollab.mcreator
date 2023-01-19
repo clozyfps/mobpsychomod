@@ -17,6 +17,72 @@
       "locked_code": false,
       "registry_name": "dark_esper_gui",
       "path": "~/Misc"
+    },
+    {
+      "name": "EntityDies",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stats"
+    },
+    {
+      "name": "BeforeHurt",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "before_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/stats"
+    },
+    {
+      "name": "PlayerUpdateTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/stats"
     }
   ],
   "variable_elements": [
@@ -33,13 +99,19 @@
       "value": "50.0"
     },
     {
+      "name": "Move2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
       "name": "Move1",
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
     },
     {
-      "name": "Move2",
+      "name": "Move4",
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
@@ -51,10 +123,10 @@
       "value": "\"\""
     },
     {
-      "name": "Move4",
-      "type": "string",
+      "name": "physical_power",
+      "type": "number",
       "scope": "player_persistent",
-      "value": "\"\""
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -69,15 +141,19 @@
         "children": []
       },
       {
-        "name": "Ability Design",
-        "children": []
-      },
-      {
         "name": "Items",
         "children": []
       },
       {
+        "name": "stats",
+        "children": []
+      },
+      {
         "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Ability Design",
         "children": []
       }
     ]
