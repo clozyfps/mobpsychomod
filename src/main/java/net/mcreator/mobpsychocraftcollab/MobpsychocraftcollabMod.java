@@ -26,6 +26,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.mobpsychocraftcollab.init.MobpsychocraftcollabModItems;
+import net.mcreator.mobpsychocraftcollab.init.MobpsychocraftcollabModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -42,6 +45,9 @@ public class MobpsychocraftcollabMod {
 	public MobpsychocraftcollabMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		MobpsychocraftcollabModItems.REGISTRY.register(bus);
+		MobpsychocraftcollabModEntities.REGISTRY.register(bus);
 
 	}
 

@@ -83,6 +83,73 @@
         "dependencies": []
       },
       "path": "~/stats"
+    },
+    {
+      "name": "DarkBlastWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blast_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ability Design"
+    },
+    {
+      "name": "DarkBlastProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blast_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ability Design"
+    },
+    {
+      "name": "DarkBlast",
+      "type": "rangeditem",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blast",
+      "path": "~/Ability Design"
     }
   ],
   "variable_elements": [
@@ -131,7 +198,9 @@
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.mobpsychocraftcollab.dark_blast": "Dark Blast"
+    }
   },
   "foldersRoot": {
     "name": "~",
