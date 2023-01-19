@@ -204,6 +204,27 @@
         ]
       },
       "path": "~/Ability Design"
+    },
+    {
+      "name": "BlastAttack",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blast_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ability Design"
     }
   ],
   "variable_elements": [
