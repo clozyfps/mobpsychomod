@@ -1,0 +1,255 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Dark Esper",
+          "width": 77,
+          "height": 20,
+          "name": "Dark Esper",
+          "x": 4,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport Esper",
+          "width": 98,
+          "height": 20,
+          "name": "Teleport Esper",
+          "x": 4,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Golden Esper",
+          "width": 87,
+          "height": 20,
+          "name": "Golden Esper",
+          "x": 4,
+          "y": 65
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Super Qigong",
+          "width": 87,
+          "height": 20,
+          "name": "Super Qigong",
+          "x": 4,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pyro Esper",
+          "width": 77,
+          "height": 20,
+          "name": "Pyro Esper",
+          "x": 5,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dark Blast 2 SP LVL 2",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Dark Blast 2 SP LVL 2",
+          "x": 113,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dark Destruct 5 SP LVL 4",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Dark Destruct 5 SP LVL 4",
+          "x": 113,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Spiritual Awareness 6 SP LVL 10",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Spiritual Awareness 6 SP LVL 10",
+          "x": 112,
+          "y": 119
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "g11.png",
+          "use1Xscale": true,
+          "name": "g11.png",
+          "x": 59,
+          "y": -3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Psychic Energy Absorption 7 SP LVL 20",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Psychic Energy Absorption 7 SP LVL 20",
+          "x": 112,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mass Dark Explosion 10 SP LVL 30",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Mass Dark Explosion 10 SP LVL 30",
+          "x": 112,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Psychic Shield 3 SP LVL 3 ",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Psychic Shield 3 SP LVL 3 ",
+          "x": 113,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Alter Ego 15 SP LVL 70",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Alter Ego 15 SP LVL 70",
+          "x": 112,
+          "y": 172
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 228,
+          "y": 12
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 249,
+          "y": 37
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 243,
+          "y": 65
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 311,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 281,
+          "y": 113
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 284,
+          "y": 142
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "width": 40,
+          "height": 20,
+          "name": "Select",
+          "x": 231,
+          "y": 167
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

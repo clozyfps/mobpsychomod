@@ -8,6 +8,15 @@
       "locked_code": false,
       "registry_name": "main_gui",
       "path": "~/Misc"
+    },
+    {
+      "name": "DarkEsperGUI",
+      "type": "gui",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_esper_gui",
+      "path": "~/Misc"
     }
   ],
   "variable_elements": [
@@ -22,6 +31,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "50.0"
+    },
+    {
+      "name": "Move1",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Move2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Move3",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Move4",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],

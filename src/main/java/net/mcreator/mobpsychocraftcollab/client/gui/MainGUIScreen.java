@@ -5,8 +5,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.mobpsychocraftcollab.world.inventory.MainGUIMenu;
@@ -84,5 +86,9 @@ public class MainGUIScreen extends AbstractContainerScreen<MainGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+		this.addRenderableWidget(new Button(this.leftPos + 154, this.topPos + -31, 51, 20, new TextComponent("Moves"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 154, this.topPos + -8, 51, 20, new TextComponent("Stats"), e -> {
+		}));
 	}
 }

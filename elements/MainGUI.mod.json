@@ -19,6 +19,28 @@
           "x": 125,
           "y": 0
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Moves",
+          "width": 51,
+          "height": 20,
+          "name": "Moves",
+          "x": 368,
+          "y": 6
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Stats",
+          "width": 51,
+          "height": 20,
+          "name": "Stats",
+          "x": 368,
+          "y": 29
+        }
       }
     ],
     "gridSettings": {

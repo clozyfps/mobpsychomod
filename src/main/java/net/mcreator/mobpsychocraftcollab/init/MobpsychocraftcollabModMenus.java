@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.mobpsychocraftcollab.world.inventory.MainGUIMenu;
+import net.mcreator.mobpsychocraftcollab.world.inventory.DarkEsperGUIMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -21,6 +22,8 @@ import java.util.ArrayList;
 public class MobpsychocraftcollabModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
 	public static final MenuType<MainGUIMenu> MAIN_GUI = register("main_gui", (id, inv, extraData) -> new MainGUIMenu(id, inv, extraData));
+	public static final MenuType<DarkEsperGUIMenu> DARK_ESPER_GUI = register("dark_esper_gui",
+			(id, inv, extraData) -> new DarkEsperGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

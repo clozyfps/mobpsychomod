@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.mobpsychocraftcollab.client.gui.MainGUIScreen;
+import net.mcreator.mobpsychocraftcollab.client.gui.DarkEsperGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MobpsychocraftcollabModScreens {
@@ -19,6 +20,7 @@ public class MobpsychocraftcollabModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(MobpsychocraftcollabModMenus.MAIN_GUI, MainGUIScreen::new);
+			MenuScreens.register(MobpsychocraftcollabModMenus.DARK_ESPER_GUI, DarkEsperGUIScreen::new);
 		});
 	}
 }
