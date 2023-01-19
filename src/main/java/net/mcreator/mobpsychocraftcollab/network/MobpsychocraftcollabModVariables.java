@@ -74,6 +74,7 @@ public class MobpsychocraftcollabModVariables {
 					.orElse(new PlayerVariables()));
 			clone.CurrentPsychicEnergy = original.CurrentPsychicEnergy;
 			clone.MaxPsychicEnergy = original.MaxPsychicEnergy;
+			clone.physical_power = original.physical_power;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -112,6 +113,7 @@ public class MobpsychocraftcollabModVariables {
 	public static class PlayerVariables {
 		public double CurrentPsychicEnergy = 0;
 		public double MaxPsychicEnergy = 50.0;
+		public double physical_power = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -122,6 +124,7 @@ public class MobpsychocraftcollabModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("CurrentPsychicEnergy", CurrentPsychicEnergy);
 			nbt.putDouble("MaxPsychicEnergy", MaxPsychicEnergy);
+			nbt.putDouble("physical_power", physical_power);
 			return nbt;
 		}
 
@@ -129,6 +132,7 @@ public class MobpsychocraftcollabModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			CurrentPsychicEnergy = nbt.getDouble("CurrentPsychicEnergy");
 			MaxPsychicEnergy = nbt.getDouble("MaxPsychicEnergy");
+			physical_power = nbt.getDouble("physical_power");
 		}
 	}
 
@@ -156,6 +160,7 @@ public class MobpsychocraftcollabModVariables {
 							.orElse(new PlayerVariables()));
 					variables.CurrentPsychicEnergy = message.data.CurrentPsychicEnergy;
 					variables.MaxPsychicEnergy = message.data.MaxPsychicEnergy;
+					variables.physical_power = message.data.physical_power;
 				}
 			});
 			context.setPacketHandled(true);

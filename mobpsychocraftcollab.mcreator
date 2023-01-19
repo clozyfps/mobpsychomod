@@ -8,6 +8,72 @@
       "locked_code": false,
       "registry_name": "main_gui",
       "path": "~/Misc"
+    },
+    {
+      "name": "PlayerUpdateTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/stats"
+    },
+    {
+      "name": "BeforeHurt",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "before_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/stats"
+    },
+    {
+      "name": "EntityDies",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stats"
     }
   ],
   "variable_elements": [
@@ -22,6 +88,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "50.0"
+    },
+    {
+      "name": "physical_power",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -45,6 +117,10 @@
       },
       {
         "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "stats",
         "children": []
       }
     ]
