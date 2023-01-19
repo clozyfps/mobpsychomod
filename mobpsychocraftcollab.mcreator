@@ -1,0 +1,70 @@
+{
+  "mod_elements": [
+    {
+      "name": "MainGUI",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_gui",
+      "path": "~/Misc"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "CurrentPsychicEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MaxPsychicEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Misc",
+        "children": []
+      },
+      {
+        "name": "Ability Design",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "mobpsychocraftcollab",
+    "modName": "mobpsychocraftcollab",
+    "version": "1.0.0",
+    "author": "jayso, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.mobpsychocraftcollab",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}
