@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.mobpsychocraftcollab.procedures.DarkBlastRangedItemUsedProcedure;
 import net.mcreator.mobpsychocraftcollab.entity.DarkBlastEntity;
 
 public class DarkBlastItem extends Item {
@@ -46,6 +47,8 @@ public class DarkBlastItem extends Item {
 				DarkBlastEntity entityarrow = DarkBlastEntity.shoot(world, entity, world.getRandom(), 2f, 7, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+
+				DarkBlastRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}
