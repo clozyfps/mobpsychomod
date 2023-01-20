@@ -16,6 +16,8 @@ import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.mobpsychocraftcollab.network.MobpsychocraftcollabModVariables;
 
@@ -56,7 +58,7 @@ public class BlastAttackProcedure {
 		entity.getPersistentData().putDouble("size", 0);
 		entity.getPersistentData().putBoolean("targat", (false));
 		for (int index0 = 0; index0 < (int) (entity.getPersistentData().getDouble("range") * 5); index0++) {
-			delay = delay + 0.5;
+			delay = delay + 0.1;
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -85,6 +87,9 @@ public class BlastAttackProcedure {
 							(entity.getPersistentData().getDouble("sy") + entity.getPersistentData().getDouble("y+") * (-0.2)));
 					entity.getPersistentData().putDouble("sz",
 							(entity.getPersistentData().getDouble("sz") + entity.getPersistentData().getDouble("z+") * (-0.2)));
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.SMOKE, (entity.getPersistentData().getDouble("sx")),
+								(entity.getPersistentData().getDouble("sy")), (entity.getPersistentData().getDouble("sz")), 3, 0.3, 0.3, 0.3, 0);
 					{
 						final Vec3 _center = new Vec3((entity.getPersistentData().getDouble("sx")), (entity.getPersistentData().getDouble("sy")),
 								(entity.getPersistentData().getDouble("sz")));
