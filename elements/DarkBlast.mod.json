@@ -23,9 +23,6 @@
     "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "onRangedItemUsed": {
-      "name": "DarkBlastRangedItemUsed"
-    },
     "bulletPower": 2.0,
     "bulletDamage": 7.0,
     "bulletKnockback": 1,
